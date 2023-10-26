@@ -26,7 +26,7 @@ Providing real data, managing the IoT systems and accurate representation of the
 - **R10** Changes in lift occupancy should be approximated using a simple queuing model.
 
 ## Use-cases
-*TODO*
+![Use case diagram](doc/diagrams/png/use_case_diagram.png)
 
 ## Components and Dependencies
 *TODO*
