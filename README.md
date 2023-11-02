@@ -54,4 +54,21 @@ Providing real data, managing the IoT systems and accurate representation of the
 - **Report Detected Errors:** The CentralHub service reports any detected errors or issues with the ski lifts.
 
 ## Components and Dependencies
-*TODO*
+![Component diagram](doc/diagrams/png/ski_paradise_components.png)
+### Central Hub
+What is Central Hub?
+#### Web Backend
+- TODO  
+#### Hub DB
+  - TODO  
+#### Central Control Unit
+  - TODO
+ 
+### Web Frontend
+- TODO
+
+### Message Queuing
+- TODO
+
+### Lift Operator
+- TODO
