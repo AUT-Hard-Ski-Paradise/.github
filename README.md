@@ -27,6 +27,48 @@ Providing real data, managing the IoT systems and accurate representation of the
 
 ## Use-cases
 ![Use case diagram](doc/diagrams/png/use_case_diagram.png)
+### Actors:
+- User: Users of the Ski Paradise system.
+- Admin: Administrators or staff members.
+- LiftOperator: A service responsible for ski lift control.
+- CentralHub: Another service responsible for ski lift control.
+
+### Use Cases for Users:
+- **Get Queue Time:** Users can access queue time information through the Ski Paradise web application.
+- **Get Weather Info:** Users can check weather information via the Ski Paradise web application.
+
+### Use Cases for Admin:
+- **Get Queue Time:** Admins can also access queue time information through the Ski Paradise web application.
+- **Get Weather Info:** Admins can check weather information via the Ski Paradise web application.
+- **Get Lift Status Info:** Admins can obtain information about the status of ski lifts through the web application.
+- **Send Operation Instructions:** Admins can send operation instructions to the ski lift control system via the Ski Paradise web application.
+
+### Use Cases for LiftOperator (Services):
+- **Send Operation Instructions:** The LiftOperator service is responsible for sending operation instructions to the ski lift control system.
+- **Lift Health Checks:** The LiftOperator service performs health checks on the ski lifts.
+- **Report Detected Errors:** The LiftOperator service reports any detected errors or issues with the ski lifts.
+
+### Use Cases for CentralHub (Services):
+- **Send Operation Instructions:** The CentralHub service is also responsible for sending operation instructions to the ski lift control system.
+- **Lift Health Checks:** The CentralHub service performs health checks on the ski lifts.
+- **Report Detected Errors:** The CentralHub service reports any detected errors or issues with the ski lifts.
 
 ## Components and Dependencies
-*TODO*
+![Component diagram](doc/diagrams/png/ski_paradise_components.png)
+### Central Hub
+What is Central Hub?
+#### Web Backend
+- TODO  
+#### Hub DB
+  - TODO  
+#### Central Control Unit
+  - TODO
+ 
+### Web Frontend
+- TODO
+
+### Message Queuing
+- TODO
+
+### Lift Operator
+- TODO
