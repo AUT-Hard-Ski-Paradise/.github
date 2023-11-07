@@ -21,7 +21,6 @@ The purpose of this document is to document all communication that takes place b
 **`LIFT_STATUS_REPORT` schema:**
 ``` json
 {
-    "id" : int,
     "type" : ENUM VAL,
     "name" : string,
     "state" : ENUM VAL,
@@ -47,7 +46,6 @@ The purpose of this document is to document all communication that takes place b
 **`ERROR_REPORT` schema:**
 ``` json
 {
-    "id" : string,
     "message" : string,
     "type" : int,
     "severity" : int
@@ -122,4 +120,6 @@ However, error reports should be cached, and handled when the corresponding Lift
 When a `LIFT_STATUS_REPORT` is received and the LO of the corresponding id is listed as `Offline` on the CCU, it should be set to `Online` and updated with the status data.
 
 ### Heartbeat
-#TODO continue
+
+The CCU periodically sends a `POLL_AVAILABLE_OPERATORS` message. If a LO fails to send a response until timeout, the CCU marks it as offline and notifies the Web Backend. Otherwise it updates the internal
+
